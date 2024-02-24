@@ -10,25 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        .sticky {
+            position: fixed; /* Positioned relative to the wrapper */
+            bottom: 0; /* Stick to the bottom */
+            right: 0; /* Stick to the right */
+            z-index: 9999; /* Ensure it stays on top */
+        }
+    </style>
 </head>
 <body style="font-family:fredoka;">
+
+<div class="form-check form-switch form-check-reverse sticky" style="float:right; font-size:18px;">
+    <input class="form-check-input" type="checkbox" role="switch" id="dark-mode-switch">
+    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+</div>
+
 <div style="text-align:center; padding: 50px; margin-bottom: 35px;" class="bg-primary">
     <h1><b>Welcome to Game With Prathyush</b></h1>
     <h3>Here, you can connect and game with me over any of the platforms listed below</h3>
 </div>
-
-<div class="card mb-3" style="width: 350px; margin: 35px;">
+<div class="card mb-3" style="width: 350px; margin: 35px; float:left;">
     <img src="resources/discord-logo.png" class="card-img-top" alt="discord-logo">
     <div class="card-body">
         <h5 class="card-title">Discord</h5>
-        <p class="card-text">Quickly connect with me over instant messaging through Discord! I am fairly active on
+        <p class="card-text">Quickly connect with me over instant messaging through Discord! I am fairly active
+            on
             this platform, so I am likely to respond to your messages within 24-48 hours. My discord username is
-            opprime777 and my handle is Opprime777.</p>
-        <a href="#" class="btn btn-primary">Add me on Discord!</a>
+            opprime777 and my display name is Opprime777. My Discord account is also linked to my Xbox
+            account.</p>
+        <a href="https://discord.com" class="btn btn-primary">Go to Discord!</a>
+    </div>
+</div>
+
+<div class="card mb-3" style="width: 350px; margin: 35px; float:left;">
+    <img src="resources/xbox-logo.png" class="card-img-top" alt="discord-logo">
+    <div class="card-body">
+        <h5 class="card-title">Xbox</h5>
+        <p class="card-text">Play video games with me on Xbox! I like to play games like Fortnite and
+            Minecraft,
+            but I
+            am open to any game you would like to play. My Xbox gamertag is Opprime777. My Xbox account is
+            also
+            linked
+            to my Discord account. I look forward to playing with you!</p>
+        <a href="https://xbox.com" class="btn btn-primary">Go to Xbox!</a>
     </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
+</html>
