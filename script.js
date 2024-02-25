@@ -8,3 +8,11 @@
         htmlTag.setAttribute('data-bs-theme', 'light');
     }
  });
+
+function trackInstaButtonClick() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    'event_category': 'Button Clicks',
+    'event_label': 'Instagram Button'
+  });
+}
