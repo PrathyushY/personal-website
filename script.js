@@ -11,7 +11,7 @@
 
 function trackButtonClick() {
     gtag('event', 'button_click', {
-        'event_category': 'Button Clicks',
+        'event_category': 'Button Clicks'
     });
 }
 
