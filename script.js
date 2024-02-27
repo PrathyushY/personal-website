@@ -9,10 +9,32 @@
     }
  });
 
+function trackButtonClick() {
+    gtag('event', 'button_click', {
+        'event_category': 'Button Clicks',
+    });
+}
+
 function trackInstaButtonClick() {
   // Send an event to Google Analytics
   gtag('event', 'button_click', {
-    'event_category': 'Button Clicks',
+    trackButtonClick()
     'event_label': 'Instagram Button'
+  });
+}
+
+function trackXboxButtonClick() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    trackButtonClick()
+    'event_label': 'Xbox Button'
+  });
+}
+
+function trackDiscordButtonClick() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    trackButtonClick()
+    'event_label': 'Discord Button'
   });
 }
