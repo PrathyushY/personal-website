@@ -18,7 +18,7 @@ function trackButtonClick() {
 function trackInstaButtonClick() {
   // Send an event to Google Analytics
   gtag('event', 'button_click', {
-    trackButtonClick()
+    trackButtonClick();
     'event_label': 'Instagram Button'
   });
 }
@@ -26,7 +26,7 @@ function trackInstaButtonClick() {
 function trackXboxButtonClick() {
   // Send an event to Google Analytics
   gtag('event', 'button_click', {
-    trackButtonClick()
+    trackButtonClick();
     'event_label': 'Xbox Button'
   });
 }
@@ -34,7 +34,7 @@ function trackXboxButtonClick() {
 function trackDiscordButtonClick() {
   // Send an event to Google Analytics
   gtag('event', 'button_click', {
-    trackButtonClick()
+    trackButtonClick();
     'event_label': 'Discord Button'
   });
 }
