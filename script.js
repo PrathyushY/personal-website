@@ -32,3 +32,11 @@ function trackDiscordButtonClick() {
     'event_label': 'Discord Button'
   });
 }
+
+function trackSourceCodeLinkClick() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    'event_category': 'Button Clicks',
+    'event_label': 'Source Code'
+  });
+}
