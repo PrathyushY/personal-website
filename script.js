@@ -45,3 +45,64 @@ document.addEventListener("DOMContentLoaded", function() {
       var content = document.getElementById("content");
       content.classList.add("animate-slide-up-fade-in");
 });
+
+
+// Check if there's a cookie for the switch state and update switch accordingly
+document.addEventListener("DOMContentLoaded", function() {
+  const switchElement = document.getElementById("dark-mode-switch");
+  const switchState = getCookie("darkModeState");
+
+  if (switchState === "on") {
+    switchElement.checked = true;
+    htmlTag.setAttribute('data-bs-theme', 'dark');
+  } else {
+    switchElement.checked = false;
+    htmlTag.setAttribute('data-bs-theme', 'light');
+  }
+
+  switchElement.addEventListener("change", function() {
+    if (this.checked) {
+      setCookie("darkModeState", "on", 7); // Set cookie for 7 days
+      enableDarkMode();
+    } else {
+      setCookie("darkModeState", "off", 7);
+      disableDarkMode();
+    }
+  });
+
+  // Function to set cookie
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  }
+
+  // Function to get cookie
+  function getCookie(name) {
+    const cookieName = name + "=";
+    const cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      let cookie = cookies[i];
+      while (cookie.charAt(0) === ' ') {
+        cookie = cookie.substring(1);
+      }
+      if (cookie.indexOf(cookieName) === 0) {
+        return cookie.substring(cookieName.length, cookie.length);
+      }
+    }
+    return "";
+  }
+
+  // Function to enable dark mode
+  function enableDarkMode() {
+    // Add code to enable dark mode (e.g., change theme, toggle classes)
+    document.body.classList.add('dark-mode');
+  }
+
+  // Function to disable dark mode
+  function disableDarkMode() {
+    // Add code to disable dark mode (e.g., change theme, toggle classes)
+    document.body.classList.remove('dark-mode');
+  }
+});
