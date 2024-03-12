@@ -43,7 +43,7 @@ function trackSourceCodeLinkClick() {
 
 document.addEventListener("DOMContentLoaded", function() {
       var content = document.getElementById("content");
-      content.classList.add("animate-slide-up-fade-in");
+      content.classList.add("startup-animation");
 });
 
 
