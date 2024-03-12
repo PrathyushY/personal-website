@@ -40,3 +40,8 @@ function trackSourceCodeLinkClick() {
     'event_label': 'Source Code'
   });
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+      var content = document.getElementById("content");
+      content.classList.add("animate-slide-up-fade-in");
+});
