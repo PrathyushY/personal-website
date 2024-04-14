@@ -96,13 +96,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Function to enable dark mode
   function enableDarkMode() {
-    // Add code to enable dark mode (e.g., change theme, toggle classes)
     document.body.classList.add('dark-mode');
   }
 
   // Function to disable dark mode
   function disableDarkMode() {
-    // Add code to disable dark mode (e.g., change theme, toggle classes)
     document.body.classList.remove('dark-mode');
   }
 });

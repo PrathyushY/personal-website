@@ -1,19 +1,19 @@
 .sticky {
-    position: fixed; /* Positioned relative to the wrapper */
-    bottom: 0; /* Stick to the bottom */
-    right: 0; /* Stick to the right */
-    z-index: 9999; /* Ensure it stays on top */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
 }
 
 body {
-    style="font-family:fredoka;"
+    font-family:fredoka;
 }
 
 footer {
     border-top: 1px solid;;
 }
 
- @keyframes slideUpAndFadeIn {
+@keyframes slideUpAndFadeIn {
     0% {
         opacity: 0;
         transform: translateY(50px);
@@ -22,7 +22,7 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
- }
+}
 
 .startup-animation {
     animation: slideUpAndFadeIn 0.75s ease-out;
