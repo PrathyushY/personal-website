@@ -41,6 +41,15 @@ function trackSourceCodeLinkClick() {
   });
 }
 
+function trackYouTubeButtonClick() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    'event_category': 'Button Clicks',
+    'event_label': 'YouTube Channel'
+  });
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
       var content = document.getElementById("content");
       content.classList.add("startup-animation");
