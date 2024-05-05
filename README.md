@@ -1,2 +1,2 @@
-# personal-gaming-website
-A website so people can find me on gaming platforms.
+# personal-website
+A website so people can find me on various platforms.
