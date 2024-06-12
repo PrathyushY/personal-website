@@ -49,6 +49,21 @@ function trackYouTubeButtonClick() {
   });
 }
 
+function trackBrickBreakerDownloads() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    'event_category': 'Button Clicks',
+    'event_label': 'BrickBreaker Download'
+  });
+}
+
+function trackPongDownloads() {
+  // Send an event to Google Analytics
+  gtag('event', 'button_click', {
+    'event_category': 'Button Clicks',
+    'event_label': 'Pong Download'
+  });
+}
 
 document.addEventListener("DOMContentLoaded", function() {
       var content = document.getElementById("content");
