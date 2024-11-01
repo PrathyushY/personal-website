@@ -1,13 +1,13 @@
- const darkModeSwitch = document.getElementById('dark-mode-switch');
- const htmlTag = document.querySelector('html');
+const darkModeSwitch = document.getElementById('dark-mode-switch');
+const htmlTag = document.querySelector('html');
 
- darkModeSwitch.addEventListener('change', function() {
-    if (this.checked) {
-        htmlTag.setAttribute('data-bs-theme', 'dark');
-    } else {
-        htmlTag.setAttribute('data-bs-theme', 'light');
-    }
- });
+darkModeSwitch.addEventListener('change', function () {
+  if (this.checked) {
+    htmlTag.setAttribute('data-bs-theme', 'dark');
+  } else {
+    htmlTag.setAttribute('data-bs-theme', 'light');
+  }
+});
 
 function trackInstaButtonClick() {
   // Send an event to Google Analytics
@@ -73,14 +73,14 @@ function trackPongDownloads() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-      var content = document.getElementById("content");
-      content.classList.add("startup-animation");
+document.addEventListener("DOMContentLoaded", function () {
+  var content = document.getElementById("content");
+  content.classList.add("startup-animation");
 });
 
 
 // Check if there's a cookie for the switch state and update switch accordingly
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const switchElement = document.getElementById("dark-mode-switch");
   const switchState = getCookie("darkModeState");
 
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
     htmlTag.setAttribute('data-bs-theme', 'light');
   }
 
-  switchElement.addEventListener("change", function() {
+  switchElement.addEventListener("change", function () {
     if (this.checked) {
       setCookie("darkModeState", "on", 7); // Set cookie for 7 days
       enableDarkMode();
